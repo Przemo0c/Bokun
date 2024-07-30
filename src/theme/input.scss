@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    font-size: 16px;
+    line-height: 1;
+}
+
+html body {
+    background: url('../assets/images/bg-image2.jpg') no-repeat;
+    text-rendering: optimizeLegibility;
+    @apply text-2xl text-white antialiased
+    
+}
+
+html body .container {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3), 0 0 10px rgba(0, 0, 0, 0.2) inset;
+    @apply rounded-xl border border-stone-950/30 mx-auto;
+}
+
+html body header nav a {
+    font-size: 16px;
+    letter-spacing: 0.44px;
+    line-height: 1.5;
+    @apply text-base hover:text-emerald-500 transition-all
+}
+
+html body .new-experience-page input{
+    @apply bg-stone-50/10 focus:outline-none focus:ring focus:ring-primary rounded-md p-3 text-base;     
+}
+
+html body .new-experience-page textarea {
+    @apply bg-stone-50/10 focus:outline-none focus:ring focus:ring-primary rounded-md p-3 text-base;        
+}
+
+html body .new-experience-page label {
+    @apply text-base mt-3 mb-1;
+}
+
+html body .new-experience-page p {
+    @apply text-base mt-1;
+}
+
+html body .new-experience-page p.error {
+    @apply text-red-500;
+}
+
+html body .new-experience-page .input-control {
+    @apply flex flex-col;
+}
